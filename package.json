@@ -1,0 +1,75 @@
+{
+  "name": "@crufteneer/dsh-yany-plugin",
+  "version": "1.0.0",
+  "description": "YANY — Yet Another NotifY plugin. Desktop notifications for finished turns, failed turns, and requests waiting for the user, with per-session mute and a focused confirmation queue.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "yany",
+    "notifications",
+    "sound",
+    "approval",
+    "focus"
+  ],
+  "license": "MIT",
+  "author": "Innokentiy Alaytsev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Innokentiy-Alaytsev/dsh-yany-plugin.git"
+  },
+  "homepage": "https://github.com/Innokentiy-Alaytsev/dsh-yany-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/Innokentiy-Alaytsev/dsh-yany-plugin/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "assets/icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "locale",
+    "assets",
+    "docs",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js",
+    "test": "node test/client.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    },
+    "manifestVersion": 1
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  }
+}

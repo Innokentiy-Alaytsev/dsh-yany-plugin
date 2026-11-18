@@ -1,0 +1,9 @@
+# Bundle patch for @crufteneer/dsh-yany-plugin
+#
+# Mounts the plugin row into the profile's Cordis tree. Install with:
+#   dsh plugin --profile <name> add link:<absolute path to this package>
+# and keep "@crufteneer/dsh-yany-plugin" in dsh.profile.bundles.
+
+- insert:
+    - id: dsh-yany-plugin
+      name: '@crufteneer/dsh-yany-plugin'

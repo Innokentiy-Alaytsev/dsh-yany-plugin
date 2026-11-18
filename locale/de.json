@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "YANY-Benachrichtigungen",
+    "description": "YANY — Yet Another NotifY plugin. Ton- und Systembenachrichtigungen für abgeschlossene und fehlgeschlagene Durchläufe sowie für Anfragen, die auf deine Antwort warten. Mit Stummschaltung pro Sitzung, globaler Stummschaltung und einer Fokus-Warteschlange für Bestätigungen."
+  }
+}

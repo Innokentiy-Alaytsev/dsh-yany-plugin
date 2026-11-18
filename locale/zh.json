@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "YANY 通知",
+    "description": "YANY — Yet Another NotifY plugin。为已完成的回合、失败的回合以及等待你回答的请求提供声音和系统通知。支持按会话静音、全局静音，以及确认请求的聚焦队列。"
+  }
+}

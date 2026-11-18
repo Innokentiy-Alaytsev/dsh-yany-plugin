@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "YANY notifications",
+    "description": "YANY — Yet Another NotifY plugin. Sound and system notifications for finished turns, failed turns, and requests waiting for your answer, with per-session mute, a global mute, and a focus queue for confirmations."
+  }
+}

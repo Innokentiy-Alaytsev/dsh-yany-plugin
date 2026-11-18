@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Notificaciones YANY",
+    "description": "YANY — Yet Another NotifY plugin. Notificaciones de sonido y del sistema para turnos completados y fallidos, y para solicitudes que esperan tu respuesta. Incluye silencio por sesión, silencio global y una cola de enfoque para confirmaciones."
+  }
+}
